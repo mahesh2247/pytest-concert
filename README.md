@@ -36,7 +36,7 @@ To use the SAM CLI, you need the following tools.
 To build and deploy your application for the first time, run the following in your shell:
 
 ```bash
-sam build --use-container
+sam build 
 sam deploy --guided
 ```
 
@@ -79,11 +79,11 @@ The SAM CLI reads the application template to determine the API's routes and the
 
 ```yaml
       Events:
-        HelloWorld:
+        BookTicketApi:
           Type: Api
           Properties:
-            Path: /hello
-            Method: get
+            Path: /book_ticket
+            Method: post
 ```
 
 ## Add a resource to your application
